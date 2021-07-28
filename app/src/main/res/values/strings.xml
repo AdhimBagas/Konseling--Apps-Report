@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FinalProjectSkripsi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--Menu String -->
+    <string name="home">Home</string>
+    <string name="article">Article</string>
+    <string name="lapor">Lapor</string>
+    <string name="tvname">tvName</string>
+    <string name="tvjabatan">tvJabatan</string>
+    <string name="image_konselor">image konselor</string>
+    <string name="konselor">Konselor</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CardView">
+    <attr format="dimension" name="cardRadius"/>
+    <attr format="dimension" name="cardviewElevation"/>
+    </declare-styleable>
+
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="cardview_radius">10dp</dimen>
+
+    <style name="Base.CardView.Main" parent="android:Widget">
+        <item name="cardRadius">@dimen/cardview_radius</item>
+        <item name="cardviewElevation">@dimen/card_elevation</item>
+        <item name="cardMaxElevation">@dimen/cardview_default_elevation</item>
+        <item name="cardUseCompatPadding">false</item>
+        <item name="cardPreventCornerOverlap">true</item>
+        <item name="cardBackgroundColor">@color/mainColor</item>
+    </style>
+
+<style name="tv_konselor_main">
+    <item name="android:layout_width">98dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:fontFamily">@font/roboto_bold</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">14sp</item>
+</style>
+
+    <style name="tv_konselor_second">
+        <item name="android:layout_width">98dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>
