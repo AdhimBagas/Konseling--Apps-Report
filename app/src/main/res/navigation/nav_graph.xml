@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.adhimbagas.finalprojectskripsi.HomeFragment"
+        android:name="com.adhimbagas.finalprojectskripsi.ui.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/articleFragment"
-        android:name="com.adhimbagas.finalprojectskripsi.ArticleFragment"
+        android:name="com.adhimbagas.finalprojectskripsi.ui.ArticleFragment"
         android:label="fragment_article"
         tools:layout="@layout/fragment_article" />
     <fragment
         android:id="@+id/laporFragment"
-        android:name="com.adhimbagas.finalprojectskripsi.LaporFragment"
+        android:name="com.adhimbagas.finalprojectskripsi.ui.LaporFragment"
         android:label="fragment_lapor"
         tools:layout="@layout/fragment_lapor" />
 </navigation>
