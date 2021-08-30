@@ -12,4 +12,15 @@
     <string name="tvjabatan">tvJabatan</string>
     <string name="image_konselor">image konselor</string>
     <string name="konselor">Konselor</string>
+
+    <!--Article String-->
+    <string name="titleArticle">Title Article</string>
+
+    <!--Content Description-->
+    <string name="cd_imgArticle">Image Article</string>
+    <string name="cd_gradient">Image Gradient Article</string>
+    <string name="datePublished">Date</string>
+
+    <!--Article Fragment-->
+    <string name="InformasiTerkiini">Cari Informasi Terkini dan Terlengkap</string>
 </resources>
