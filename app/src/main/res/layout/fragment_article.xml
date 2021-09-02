@@ -7,6 +7,7 @@
     tools:context=".ui.ArticleFragment">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
         android:layout_width="match_parent"
         android:layout_height="209dp"
         app:cardBackgroundColor="@color/mainColor"
@@ -19,25 +20,37 @@
             android:layout_height="match_parent">
 
             <TextView
+                style="@style/tv_konselor_main"
                 android:layout_width="254dp"
                 android:layout_height="56dp"
-                android:text="@string/InformasiTerkiini"
-                style="@style/tv_konselor_main"
-                android:textColor="@color/white"
-                android:textSize="24sp"
-                android:layout_marginStart="24dp"
                 android:layout_gravity="center_vertical"
-                />
+                android:layout_marginStart="24dp"
+                android:text="@string/InformasiTerkiini"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
 
             <androidx.appcompat.widget.SearchView
                 android:layout_width="300dp"
                 android:layout_height="35dp"
-                android:background="@drawable/search_view"
                 android:layout_gravity="bottom"
                 android:layout_margin="24dp"
-                />
+                android:background="@drawable/search_view" />
         </FrameLayout>
     </androidx.cardview.widget.CardView>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvArticle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        tools:listitem="@layout/item_list_article"
+        >
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
