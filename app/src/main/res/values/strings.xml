@@ -20,10 +20,14 @@
     <string name="cd_imgArticle">Image Article</string>
     <string name="cd_gradient">Image Gradient Article</string>
     <string name="datePublished">Date</string>
+    <string name="buttonShare">Button Share</string>
 
     <!--Article Fragment-->
     <string name="InformasiTerkiini">Cari Informasi Terkini dan Terlengkap</string>
 
-<!--    Base URL-->
+    <!--    Base URL-->
+
+
+<!--    Content Description-->
 
 </resources>

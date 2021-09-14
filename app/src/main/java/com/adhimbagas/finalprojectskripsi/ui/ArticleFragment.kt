@@ -43,7 +43,7 @@ class ArticleFragment : Fragment(), LifecycleObserver {
 //        Cobaa
         rvArticle.layoutManager  = LinearLayoutManager(requireContext())
         setArticleData()
-        mAdapters = ArticleNewsAdapters()
+        mAdapters = ArticleNewsAdapters(requireContext())
         rvArticle.adapter = mAdapters
 //        articleAdapter = ArticleNewsAdapters()
 //        articleAdapter.notifyDataSetChanged()
@@ -83,7 +83,7 @@ class ArticleFragment : Fragment(), LifecycleObserver {
         val jsonArrayRequest = JsonArrayRequest(Request.Method.GET, url,null,
                 { response ->
                     // Do something with the response
-                    Log.d(TAG, "onResponse: "+ response.toString())
+                    Log.d(TAG, "onResponse: $response")
                   try {
                       val listArticle = ArrayList<Article>()
                         for (i in 0 until response.length()){
@@ -103,7 +103,13 @@ class ArticleFragment : Fragment(), LifecycleObserver {
                             //Initiate featured image
                             article.imageArticle = jsonObjectData.getString("featured_media_src_url")
 
+                            //Initiate Content
+                            val jsonObjectContent: JSONObject = jsonObjectData.getJSONObject("content")
+                            article.content = jsonObjectContent.getString("rendered")
                             listArticle.add(article)
+
+                            //Initiate Link URL
+                            article.link = jsonObjectData.getString("link")
                         }
                       mAdapters.updateArticle(listArticle)
 
@@ -121,4 +127,5 @@ class ArticleFragment : Fragment(), LifecycleObserver {
         // Add the request to the RequestQueue.
         queue.add(jsonArrayRequest)
     }
+
 }

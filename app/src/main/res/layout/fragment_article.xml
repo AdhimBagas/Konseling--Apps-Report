@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+
+<androidx.core.widget.NestedScrollView
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    tools:context=".ui.ArticleFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.ArticleFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="match_parent"
@@ -34,6 +42,8 @@
                 android:layout_height="35dp"
                 android:layout_gravity="bottom"
                 android:layout_margin="24dp"
+                app:measureWithLargestChild="true"
+                app:queryHint="Cari judul artikel disini"
                 android:background="@drawable/search_view" />
         </FrameLayout>
     </androidx.cardview.widget.CardView>
@@ -47,6 +57,10 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView2"
         tools:listitem="@layout/item_list_article"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:nestedScrollingEnabled="false"
+
         >
     </androidx.recyclerview.widget.RecyclerView>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
