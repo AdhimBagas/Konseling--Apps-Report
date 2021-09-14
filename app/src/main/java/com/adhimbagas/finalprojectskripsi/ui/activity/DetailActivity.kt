@@ -76,7 +76,6 @@ class DetailActivity : AppCompatActivity() {
         webView.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY
 
 
-//        setArticle()
     }
 
 
