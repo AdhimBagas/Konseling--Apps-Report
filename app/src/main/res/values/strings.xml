@@ -24,6 +24,9 @@
 
     <!--Article Fragment-->
     <string name="InformasiTerkiini">Cari Informasi Terkini dan Terlengkap</string>
+    <string name="tvKonselorString">Konselor Name</string>
+    <string name="tvInstitutionKonselor">Institusi Konselor</string>
+    <string name="conselor_image">Conselor Image</string>
 
     <!--    Base URL-->
 
