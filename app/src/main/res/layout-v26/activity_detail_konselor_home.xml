@@ -142,7 +142,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_whatsapp"
-                android:contentDescription="@string/conselor_image"
                 android:layout_gravity="center"/>
         </FrameLayout>
     </androidx.cardview.widget.CardView>
@@ -173,7 +172,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
-        android:text="@string/tvAbout"
+        android:text="TextView"
+        android:justificationMode="inter_word"
         style="@style/tvKonselor_DetailHomeSekunder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -185,7 +185,7 @@
         style="@style/tvKonselor_DetailHome"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:text="@string/address"
+        android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvAbout_konselorDetail" />
 
@@ -208,19 +208,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_home"
-                android:contentDescription="@string/image_addresskonselor"
-                />
+                android:src="@drawable/ic_home" />
         </FrameLayout>
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/tvAddress_konselorDetail"
-        android:layout_width="150dp"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        android:text="@string/tv_address"
+        android:text="TextView"
         style="@style/tvKonselor_DetailHomeSekunder"
         app:layout_constraintStart_toEndOf="@+id/cardView5"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -230,7 +228,7 @@
         style="@style/tvKonselor_DetailHome"
         android:layout_marginStart="24dp"
         android:layout_marginTop="22dp"
-        android:text="@string/daily_practice"
+        android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView5" />
 
@@ -240,6 +238,8 @@
         android:layout_height="32dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="26dp"
+
+
         app:cardBackgroundColor="@color/mainColor"
         app:cardCornerRadius="3dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -252,20 +252,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="26dp"
-        android:text="@string/tv_daily_practice"
+        android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/cardView6"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-    <ImageButton
-        android:id="@+id/button2"
-        android:layout_width="308dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="50dp"
-        android:src="@drawable/img_whatsapp"
-        android:text="Button"
-        app:layout_constraintCircleRadius="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDailyPractice_konselorDetail" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
