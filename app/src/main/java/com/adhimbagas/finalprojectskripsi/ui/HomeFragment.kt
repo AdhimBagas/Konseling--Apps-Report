@@ -46,26 +46,14 @@ class HomeFragment : Fragment(), LifecycleObserver {
         mAdapters = KonselorHomeAdapters(requireContext())
         mAdapters.setData(getKonselor())
 
-//        rvArticle.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         val linearLayoutManager = LinearLayoutManager(requireContext())
         linearLayoutManager.orientation = LinearLayoutManager.HORIZONTAL
 
         rvArticle.setHasFixedSize(true)
         rvArticle.layoutManager = linearLayoutManager
         rvArticle.adapter = mAdapters
-
-//        prepareCourseRV()
-//
-//        val snapHelper: SnapHelper = LinearSnapHelper()
-//        snapHelper.attachToRecyclerView(rvArticle)
-
     }
 
-//    private fun prepareCourseRV() {
-//        val linearLayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-//        rvArticle.layoutManager = linearLayoutManager
-//        rvArticle.adapter = mAdapters
-//    }
 
     override fun onAttach(context: Context) {
         super.onAttach(context)

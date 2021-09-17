@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProjectSkripsi"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.activity.DetailActivity"></activity>
+        <activity android:name=".ui.activity.DetailKonselorHome"></activity>
+        <activity android:name=".ui.activity.DetailActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
