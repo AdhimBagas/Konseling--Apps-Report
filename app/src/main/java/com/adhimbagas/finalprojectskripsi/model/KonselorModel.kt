@@ -14,7 +14,7 @@ data class KonselorModel(
         var email: String? =null,
         var about: String? = null,
         var address: String? = null,
-        var dailyPracticeL: String? = null,
+        var dailyPractice: String? = null,
         var image: String? = null
 
         ): Parcelable
