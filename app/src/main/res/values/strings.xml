@@ -24,6 +24,21 @@
 
     <!--Article Fragment-->
     <string name="InformasiTerkiini">Cari Informasi Terkini dan Terlengkap</string>
+    <string name="tvKonselorString">Konselor Name</string>
+    <string name="tvInstitutionKonselor">Institusi Konselor</string>
+    <string name="conselor_image">Conselor Image</string>
+    <string name="konselorNameDetail">Adhim Bagas</string>
+    <string name="tvkonselorInstitusi">Universitas Negeri  Semarang</string>
+    <string name="cd_email">email icon</string>
+    <string name="about">About</string>
+    <string name="tvAbout">Lorem ipsmu das moko habagui yunita jakaloing</string>
+    <string name="address">Address</string>
+    <string name="image_addresskonselor">Icon Address</string>
+    <string name="daily_practice">Daily Practice</string>
+    <string name="tv_daily_practice">Senin - Jum\'at</string>
+    <string name="tv_address">Jl. Ahmad Yani No. 9 Gang Anyelir kauman Batang</string>
+    <string name="cd_buttonImage">Button Whatsapp</string>
+    <string name="button_whatsapp">Button Whatsapp</string>
 
     <!--    Base URL-->
 

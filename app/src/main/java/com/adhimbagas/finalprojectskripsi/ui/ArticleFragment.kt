@@ -24,7 +24,7 @@ import org.json.JSONObject
 class ArticleFragment : Fragment(), LifecycleObserver {
 
     private lateinit var binding: FragmentArticleBinding
-  private lateinit var rvArticle: RecyclerView
+    private lateinit var rvArticle: RecyclerView
 
     private lateinit var mAdapters: ArticleNewsAdapters
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
