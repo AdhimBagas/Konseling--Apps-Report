@@ -61,4 +61,12 @@
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
+
+    <style name="tvKonselor_DetailHomeSekunder">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
 </resources>

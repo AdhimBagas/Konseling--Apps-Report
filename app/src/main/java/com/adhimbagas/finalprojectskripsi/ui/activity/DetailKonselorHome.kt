@@ -1,8 +1,12 @@
 package com.adhimbagas.finalprojectskripsi.ui.activity
 
+import android.annotation.SuppressLint
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import android.widget.Toast
 import com.adhimbagas.finalprojectskripsi.BuildConfig
 import com.adhimbagas.finalprojectskripsi.databinding.ActivityDetailKonselorHomeBinding
 import com.adhimbagas.finalprojectskripsi.model.KonselorModel
@@ -11,12 +15,13 @@ import com.bumptech.glide.Glide
 class DetailKonselorHome : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailKonselorHomeBinding
-    private val TAG = "konselor_home"
+
 
     companion object {
         const val DETAIL_KONSELOR = "DETAIL_KONSELOR"
     }
 
+    @SuppressLint("QueryPermissionsNeeded")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -25,7 +30,7 @@ class DetailKonselorHome : AppCompatActivity() {
         setContentView(view)
 
 
-        val toolBar = binding.toolbarBack
+        val toolBar = binding.toolbar2
         setSupportActionBar(toolBar)
         if (BuildConfig.DEBUG && supportActionBar == null) {
             error("Assertion failed")
@@ -33,52 +38,68 @@ class DetailKonselorHome : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setDisplayShowTitleEnabled(false)
 
-            //Set Variable Data String
-            val positionTitle = binding.tvKonselorDetailTitle
-//            val nameKonselor = binding.tvNameKonselorDetail
-//            val institution = binding.tvInstitutionKonselorDetail
-//            val about = binding.tvAboutKonselorDetail
-//            val address = binding.tvAddressKonselorDetail
-//            val practice = binding.tvDailyPracticeKonselorDetail
+        //Set Variable Data String
+        val positionTitle = binding.tvKonselorDetailTitle
+        val nameKonselor = binding.tvNameKonselorDetail
+        val institution = binding.tvInstitution
+        val about = binding.tvAbout
+        val address = binding.tvAddressKonselorDetail
+        val practice = binding.tvDailyPracticeKonselorDetail
 
-            //set Variable Data Image
-            val imgKonselor = binding.imgKonselorDetail
-
-            //Set variable Data CardView
-//            val cvEmail = binding.cvEmail
-//            val cvWhatsapp = binding.cvWhatsapp
-//            val cvInstagram = binding.cvInstagram
-
-            //set button
-//            val btnWhatsapp = binding.btnWhatsapp
+        //set Variable Data Image
+        val imgKonselor = binding.imgKonselorDetail
 
 
-            //Initiation Parcelable EXTRA
-            val detailKons = intent.getParcelableExtra<KonselorModel>(DETAIL_KONSELOR) as KonselorModel
+        //set button
+        val btnWhatsapp = binding.btnWhatsapp
 
 
-            //String Text.
-            positionTitle.text = detailKons.position
-//            nameKonselor.text = detailKons.name
-//            institution.text = detailKons.institution
-//            about.text = detailKons.about
-//            address.text = detailKons.address
-//            practice.text = detailKons.dailyPractice
+        //Initiation Parcelable EXTRA
+        val detailKons = intent.getParcelableExtra<KonselorModel>(DETAIL_KONSELOR) as KonselorModel
 
 
-            //Glide Image
-            Glide.with(this).
-                    load(detailKons.image)
-                    .override(150,150)
-                    .into(imgKonselor)
-                     }
+        //String Text.
+        positionTitle.text = detailKons.position
+        nameKonselor.text = detailKons.name
+        institution.text = detailKons.institution
+        about.text = detailKons.about
+        address.text = detailKons.address
+        practice.text = detailKons.dailyPractice
 
-            //cardvIew
 
+        val number = detailKons.whatsapp
+
+
+        //Glide Image
+        Glide.with(this)
+            .load(detailKons.image)
+            .override(150,150)
+            .into(imgKonselor)
+
+
+        //cardvIew
+
+        btnWhatsapp.setOnClickListener {
+            val packageManager: PackageManager = packageManager
+            val url = "https://api.whatsapp.com/send?phone=$number"
+            val i = Intent(Intent.ACTION_VIEW)
+            i.setPackage("com.whatsapp")
+            i.data = Uri.parse(url)
+
+            if (i.resolveActivity(packageManager) != null)
+                startActivity(i)
+            else
+                Toast.makeText(this,"Error Application", Toast.LENGTH_SHORT).show()
+        }
+
+        //Btn Whatsapp
+
+
+
+    }
 
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
-        Log.d(TAG,"Back")
         return super.onSupportNavigateUp()
     }
 }

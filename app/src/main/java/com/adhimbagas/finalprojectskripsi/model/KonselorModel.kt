@@ -10,8 +10,6 @@ data class KonselorModel(
         var institution: String? = null,
         var whatsapp: String? = null,
         var position: String? = null,
-        var instagram: String? = null,
-        var email: String? =null,
         var about: String? = null,
         var address: String? = null,
         var dailyPractice: String? = null,

@@ -32,8 +32,6 @@ class KonselorHomeAdapters (private val context: Context): RecyclerView.Adapter<
                     a.institution,
                     a.whatsapp,
                     a.position,
-                    a.instagram,
-                    a.email,
                     a.about,
                     a.address,
                     a.dailyPractice,
