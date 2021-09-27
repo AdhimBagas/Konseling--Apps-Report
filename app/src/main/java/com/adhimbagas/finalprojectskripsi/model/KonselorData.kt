@@ -23,7 +23,7 @@ object KonselorData {
                 KonselorModel(
                         "Wisnu AJi",
                         "Universitas Gajah MADA",
-                        "0885-8064-5417",
+                        "+6285161710805",
                         "Konselor",
                         "saya adalah konselor di universitas negeri semaarang" +
                                 "Sebagai salah satu konselor dengan jam terbang yang tinggi",
@@ -37,7 +37,7 @@ object KonselorData {
                 KonselorModel(
                         "Wisnu AJi",
                         "Universitas Gajah MADA",
-                        "0885-8064-5417",
+                        "+6285161710805",
                         "Konselor",
                         "saya adalah konselor di universitas negeri semaarang" +
                                 "Sebagai salah satu konselor dengan jam terbang yang tinggi",
@@ -51,7 +51,7 @@ object KonselorData {
                 KonselorModel(
                         "Unggul JAYA",
                         "Universitas TUJUH AGUSTUS",
-                        "0885-8064-5417",
+                        "+6285161710805",
                         "Konselor",
                         "saya adalah konselor di universitas negeri semaarang" +
                                 "Sebagai salah satu konselor dengan jam terbang yang tinggi",
@@ -64,7 +64,7 @@ object KonselorData {
                 KonselorModel(
                         "Unggul JAYA",
                         "Universitas TUJUH AGUSTUS",
-                        "0885-8064-5417",
+                        "+6285161710805",
                         "Konselor",
                         "saya adalah konselor di universitas negeri semaarang" +
                                 "Sebagai salah satu konselor dengan jam terbang yang tinggi",
