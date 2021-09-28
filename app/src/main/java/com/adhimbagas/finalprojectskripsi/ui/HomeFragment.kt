@@ -1,11 +1,13 @@
 package com.adhimbagas.finalprojectskripsi.ui
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
@@ -16,6 +18,7 @@ import com.adhimbagas.finalprojectskripsi.adapter.KonselorHomeVerticalAdapters
 import com.adhimbagas.finalprojectskripsi.databinding.FragmentHomeBinding
 import com.adhimbagas.finalprojectskripsi.model.KonselorData
 import com.adhimbagas.finalprojectskripsi.model.KonselorModel
+import com.adhimbagas.finalprojectskripsi.ui.activity.RoboHome
 
 class HomeFragment : Fragment(), LifecycleObserver {
 
@@ -41,6 +44,8 @@ class HomeFragment : Fragment(), LifecycleObserver {
     @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
     fun onCreated(){
 
+
+
         rvArticle = binding.recyclerView2
 
         rvKons = binding.rvListKonselorHome
@@ -57,6 +62,21 @@ class HomeFragment : Fragment(), LifecycleObserver {
 
 
         setUpKonsVertical()
+        setUprobo()
+    }
+
+    private fun setUprobo() {
+        val btnRobo = binding.cvRobo
+        btnRobo.setOnClickListener {
+
+            activity?.let {
+                val i = Intent(it, RoboHome::class.java)
+                it.startActivity(i)
+
+                Toast.makeText(context,"Welcome to Robo",Toast.LENGTH_SHORT).show()
+            }
+
+        }
     }
 
     private fun setUpKonsVertical() {

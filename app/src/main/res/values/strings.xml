@@ -40,10 +40,12 @@
     <string name="cd_buttonImage">Button Whatsapp</string>
     <string name="button_whatsapp">Button Whatsapp</string>
     <string name="sharingWithUs">Sharing With Us</string>
+    <string name="sistem_pakar_robo">Sistem Pakar Robo</string>
+    <string name="cw_pakarRobo">Mengkategorikan perilaku apa yang didapat terkait kekerasan dan pelecehan seksual berdasarkan input yang diberikan</string>
 
     <!--    Base URL-->
 
 
-<!--    Content Description-->
+    <!--    Content Description-->
 
 </resources>
