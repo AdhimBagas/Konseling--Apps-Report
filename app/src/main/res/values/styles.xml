@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="textDetail">
+
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet urna proin bibendum egestas congue sed. Morbi sit imperdiet nulla et eu adipiscing mattis.</item>
+
+    </style>
+</resources>

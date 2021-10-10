@@ -53,6 +53,10 @@
     <string name="anda_mengalami">Anda Mengalami</string>
     <string name="hasil_diagnosa">Hasil Diagnosa</string>
     <string name="img_des_dialogHasil">Image Dialog Hasil Usaha</string>
+    <string name="img_des_perilaku">Perilaku Image</string>
+    <string name="nama_perilaku">nama perilaku</string>
+    <string name="ciri_ciri">Ciri-ciri</string>
+    <string name="solusi">Solusi</string>
 
     <!--    Base URL-->
 

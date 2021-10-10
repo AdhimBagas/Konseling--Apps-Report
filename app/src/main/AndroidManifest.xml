@@ -16,7 +16,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProjectSkripsi"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.activity.activityRobo.PertanyaanGejala"></activity>
+        <activity android:name=".ui.activity.activityRobo.DetailPerilaku"></activity>
+        <activity android:name=".ui.activity.activityRobo.PertanyaanGejala" />
         <activity android:name=".ui.activity.RoboHome" />
         <activity android:name=".ui.activity.DetailKonselorHome" />
         <activity android:name=".ui.activity.DetailActivity" />

@@ -3,6 +3,7 @@ package com.adhimbagas.finalprojectskripsi.ui.activity.activityRobo;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -118,7 +119,10 @@ public class PertanyaanGejala extends AppCompatActivity implements DialogHasilDi
 
     @Override
     public void fragmentInteraction(int kodePerilaku) {
-        Toast.makeText(this, "Btn Detail Clicked", Toast.LENGTH_SHORT).show();
+        Intent i = new Intent(PertanyaanGejala.this, DetailPerilaku.class);
+        i.putExtra("EXTRA_KODE_KERUSAKAN", kodePerilaku);
+        startActivity(i);
+        finish();
     }
 
 }
