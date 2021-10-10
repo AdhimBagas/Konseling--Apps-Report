@@ -92,7 +92,6 @@ class DetailKonselorHome : AppCompatActivity() {
                 Toast.makeText(this,"Error Application", Toast.LENGTH_SHORT).show()
         }
 
-        //Btn Whatsapp
 
 
 
