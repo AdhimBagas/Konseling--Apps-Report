@@ -45,19 +45,6 @@ class ArticleFragment : Fragment(), LifecycleObserver {
         setArticleData()
         mAdapters = ArticleNewsAdapters(requireContext())
         rvArticle.adapter = mAdapters
-//        articleAdapter = ArticleNewsAdapters()
-//        articleAdapter.notifyDataSetChanged()
-////
-////        rvArticle.layoutManager = LinearLayoutManager(requireContext())
-//        val linearLayoutManager: LinearLayoutManager= LinearLayoutManager(requireContext())
-//        linearLayoutManager.orientation = LinearLayoutManager.VERTICAL
-//
-//        rvArticle.setHasFixedSize(true)
-//        rvArticle.layoutManager = linearLayoutManager
-//        rvArticle.adapter = articleAdapter
-//
-//
-//        setArticleData()
 
     }
 

@@ -15,11 +15,7 @@ class ArticleNewsAdapters(private val context: Context): RecyclerView.Adapter<Ar
 
 
 private val listArticle = ArrayList<Article>()
-//    fun setData (items: ArrayList<Article>){
-//        listArticle.clear()
-//        listArticle.addAll(items)
-//        notifyDataSetChanged()
-//    }
+
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
@@ -73,8 +69,4 @@ private val listArticle = ArrayList<Article>()
         }
 
     }
-
-//    interface OnArticleClicked{
-//        fun onClicked (article: Article)
-//   }
 }
