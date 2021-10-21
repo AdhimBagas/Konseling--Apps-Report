@@ -57,6 +57,15 @@
     <string name="nama_perilaku">nama perilaku</string>
     <string name="ciri_ciri">Ciri-ciri</string>
     <string name="solusi">Solusi</string>
+    <string name="nama">Nama</string>
+    <string name="formulir_pengaduan">Formulir Pengaduan</string>
+    <string name="alamat">Alamat</string>
+    <string name="no_hp">No. HP</string>
+    <string name="email">Email</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="laki_laki">Laki-laki</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="aduan">Aduan</string>
 
     <!--    Base URL-->
 
