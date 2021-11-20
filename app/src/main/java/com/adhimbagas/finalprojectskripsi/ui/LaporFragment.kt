@@ -37,9 +37,6 @@ class LaporFragment : Fragment(), LifecycleObserver {
         binding = FragmentLaporBinding.inflate(layoutInflater)
         return binding.root
 
-
-
-
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
