@@ -38,6 +38,7 @@ class DetailKonselorHome : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setDisplayShowTitleEnabled(false)
 
+
         //Set Variable Data String
         val positionTitle = binding.tvKonselorDetailTitle
         val nameKonselor = binding.tvNameKonselorDetail

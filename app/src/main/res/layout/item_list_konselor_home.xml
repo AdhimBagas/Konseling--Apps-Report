@@ -10,7 +10,6 @@
         android:id="@+id/cv_konselorHome"
         android:layout_width="230dp"
         android:layout_height="160dp"
-        app:cardBackgroundColor="@color/mainColor"
         app:cardCornerRadius="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -18,7 +17,9 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/card_gradient"
+            >
 
             <TextView
                 android:id="@+id/tvKonselor"
@@ -35,24 +36,21 @@
                 android:id="@+id/tvInstitution"
                 style="@style/tvKonselor_homeFragment_sekunder"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="4dp"
                 android:text="@string/tvInstitutionKonselor"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvKonselor" />
 
             <ImageView
                 android:id="@+id/img_konselor_home"
-                android:layout_width="108dp"
-                android:layout_height="108dp"
-                android:layout_marginStart="2dp"
-                android:layout_marginEnd="8dp"
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:contentDescription="@string/conselor_image"
                 android:scaleType="fitXY"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.78"
                 app:layout_constraintStart_toEndOf="@+id/tvKonselor"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_person"
-                android:contentDescription="@string/conselor_image" />
+                app:srcCompat="@drawable/kons_person" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

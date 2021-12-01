@@ -35,7 +35,7 @@
     <string name="address">Address</string>
     <string name="image_addresskonselor">Icon Address</string>
     <string name="daily_practice">Daily Practice</string>
-    <string name="tv_daily_practice">Senin - Jum\'at</string>
+    <string name="tv_daily_practice">Senin - Jum\'at\n09.00 - 10.00 WIB</string>
     <string name="tv_address">Jl. Ahmad Yani No. 9 Gang Anyelir kauman Batang</string>
     <string name="cd_buttonImage">Button Whatsapp</string>
     <string name="button_whatsapp">Button Whatsapp</string>
@@ -66,6 +66,8 @@
     <string name="laki_laki">Laki-laki</string>
     <string name="jenis_kelamin">Jenis Kelamin</string>
     <string name="aduan">Aduan</string>
+    <string name="official_robo">Official Robo!</string>
+    <string name="des_robo">Tell me what\'s going on and i\'ll give you advice</string>
 
     <!--    Base URL-->
 

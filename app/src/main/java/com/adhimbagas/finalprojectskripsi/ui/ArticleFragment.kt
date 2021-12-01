@@ -105,11 +105,9 @@ class ArticleFragment : Fragment(), LifecycleObserver {
                       e.message?.let { Log.d(TAG, it) }
                   }
 
-                },
-                )
-                { error ->
+                },{ error ->
                         error.printStackTrace()
-                }
+                })
 
         // Add the request to the RequestQueue.
         queue.add(jsonArrayRequest)

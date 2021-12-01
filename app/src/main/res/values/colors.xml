@@ -11,5 +11,11 @@
     <color name="red">#f03434</color>
     <color name="mainColor">#9487F9</color>
     <color name="grey">#DFE6E9</color>
+    <color name="univColor">#7D7E83</color>
+
+    <color name="blueDark">#199A96</color>
+    <color name="blueLight">#52FFFA</color>
+
+    <color name="greyRadial">#A7A8A9</color>
 
 </resources>
