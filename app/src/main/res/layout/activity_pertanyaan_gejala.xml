@@ -16,9 +16,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
-        android:fontFamily="@font/roboto"
+        android:fontFamily="@font/roboto_bold"
         android:text="@string/robo_kps"
-        android:textColor="@color/mainColor"
+        android:textColor="@color/blueDark"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,15 +62,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_kode_soal" />
 
-    <Button
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_yes"
         android:layout_width="312dp"
         android:layout_height="60dp"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:text="@string/ya"
-        android:elevation="10dp"
+        android:background="@drawable/btn_gradient"
+        android:text="Ya"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_pertanyaan" />
@@ -78,13 +78,14 @@
     <Button
         android:id="@+id/btn_no"
         android:layout_width="312dp"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:text="@string/tidak"
+        android:textColor="@color/blueDark"
         style="?attr/materialButtonOutlinedStyle"
-        app:strokeColor="@color/mainColor"
+        app:strokeColor="@color/blueDark"
         app:strokeWidth="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
