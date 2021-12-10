@@ -68,6 +68,12 @@
     <string name="aduan">Aduan</string>
     <string name="official_robo">Official Robo!</string>
     <string name="des_robo">Tell me what\'s going on and i\'ll give you advice</string>
+    <string name="diagnosa_image">diagnosa image</string>
+    <string name="diagnosa">Diagnosa</string>
+    <string name="welcome_to_robo">Welcome To Robo</string>
+    <string name="image_list_perilaku">image list perilaku</string>
+    <string name="daftar_perilaku">Daftar Perilaku</string>
+    <string name="button_input_lapor">Button</string>
 
     <!--    Base URL-->
 

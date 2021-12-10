@@ -18,14 +18,15 @@
         android:id="@+id/cardView2"
         android:layout_width="match_parent"
         android:layout_height="209dp"
-        app:cardBackgroundColor="@color/mainColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/card_gradient"
+            >
 
             <TextView
                 style="@style/tv_konselor_main"
