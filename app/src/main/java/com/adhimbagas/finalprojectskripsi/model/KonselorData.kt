@@ -16,7 +16,7 @@ object KonselorData {
                         "Jl. Proyonanggan Utara selatana80 - 111203 Kauamn Batang jawa tengah",
                         "Senin - Jum'at\n" +
                                 "09.00 - 10.00 WIB",
-                        "https://i.postimg.cc/BQZ5fr7C/bruno-rodrigues-279x-IHym-PYY-unsplash-removebg-preview.png"
+                        "https://i.ibb.co/88fPgBB/adhim-bagas.png"
                 )
         )
 
@@ -31,7 +31,7 @@ object KonselorData {
                         "Jl. ahmad Yani No. 9 Kauman Batang",
                         "Senin - Jum'at\n" +
                                 "09.00 - 10.00 WIB",
-                        "https://i.postimg.cc/BQZ5fr7C/bruno-rodrigues-279x-IHym-PYY-unsplash-removebg-preview.png"
+                        "https://i.postimg.cc/N0GfGCnS/humberto-chavez-FVh-yq-LR9e-A-unsplash-removebg-preview.png"
                 )
         )
 
@@ -45,7 +45,7 @@ object KonselorData {
                                 "Sebagai salah satu konselor dengan jam terbang yang tinggi",
                         "Jl. ahmad Yani No. 9 Kauman Batang",
                         "Senin - Jum\'at\n09.00 - 10.00 WIB",
-                        "https://i.postimg.cc/BQZ5fr7C/bruno-rodrigues-279x-IHym-PYY-unsplash-removebg-preview.png"
+                        "https://i.postimg.cc/Nf1g6wqZ/usman-yousaf-p-Trhfmj2j-DA-unsplash-1-removebg-preview.png"
                 )
         )
 
