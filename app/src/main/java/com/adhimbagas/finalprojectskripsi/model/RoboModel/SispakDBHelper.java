@@ -92,7 +92,7 @@ public class SispakDBHelper extends SQLiteOpenHelper {
                 "Kerusakan pada prosesor bisa disebabkan karena prosesor mengalami panas yang berlebihan atau sering juga disebut overheating, sehingga dapat menyebabkan IC nya terbakar dan kemudian prosesor tidak dapat digunakan lagi. Kerusakan ini juga bisa terjadi karena banyak debu yang menempel pada kipas prosesor yang menyebabkan kinerja dari kipas pendingin prosesor terganggu",
                 "1. Suhu prosesor cepat panas. \n2. Komputer sering restart sendiri. \n3. Komputer menyala, tapi tidak tampil di monitor. \n4. Muncul pesan error pada BIOS. \n5. Gagal menjalankan software atau aplikasi.",
                 "- Bersihkan kipas prosesor dari debu-debu yang menempel agar kinerja kipas prosesor kembali normal \n\n- Gunakan kipas tambahan untuk membantu menurunkan suhu prosesor \n\n- Berikan Thermal Paste pada permukaan prosesor, karena Thermal Paste berguna menyerap suhu panas yang dihasilkan prosesor \n\n- Jangan paksakan komputer untuk menjalankan aplikasi yang cukup berat \n\n- Atur sirkulasi udara dalam ruangan agar tetap sejuk karena secara tidak langsung mempengaruhi suhu dari prosesor dan komputer.",
-                R.drawable.processor);
+                R.drawable.perilaku_menggoda);
         insertKerusakan(p1);
 
         Perilaku p2 = new Perilaku(
@@ -101,7 +101,7 @@ public class SispakDBHelper extends SQLiteOpenHelper {
                 "Kerusakan motherboard bisa terjadi karena terjadi kerusakan chipset yang menyebabkan pembacaan perangkat keras yang terhubung menjadi lambat, bahkan terjadi kegagalan dalam hubungan (interkoneksi) antar komponen dalam motherboard dan akibatnya komputer stuck pada tampilan tertentu. Kerusakan motherboard juga bisa terjadi karena adanya tegangan listrik dan juga suplai listrik yang tidak stabil yang bisa menyebabkan motherboard terbakar.",
                 "1. Tampilan layar komputer stuck di boot screen. \n2. Komputer sulit untuk dihidupkan. \n3. Komputer mati total. \n4. Lampu indikator pada monitor berkedip-kedip.",
                 "- Jauhkan kompenen motherboard dari lokasi berdebu yang bisa menghambat proses pendinginan \n\n- Jangan menjatuhkan motherboard dengan keras \n\n- Selalu periksa apakah setiap komponen sudah tersambung dengan baik pada socketnya \n\n- Gunakan volt stabilizer untuk menstabilkan daya listrik dan juga tegangan listrik agar tidak kurang atau kelebihan.",
-                R.drawable.processor);
+                R.drawable.pelanggaran_seksual);
         insertKerusakan(p2);
 
         Perilaku p3 = new Perilaku(
@@ -110,7 +110,7 @@ public class SispakDBHelper extends SQLiteOpenHelper {
                 "Kerusakan memori RAM bisa disebabkan karena pemakaian yang berlebihan, seperti RAM dengan kapasitas hanya 1 GB dipaksa untuk menjalankan aplikasi yang membutuhkan kapasitas RAM yang besar. Ini bisa menyebabkan RAM dapat mengalami malfungsi dan mengalami kerusakan. Hal lainnya yang dapat menyebabkan kerusakan memori RAM adalah slot RAM tertutup debu atau lembab karena air.",
                 "1. Komputer terasa lambat atau berat. \n2. Komputer sering restart sendiri. \n3. Terjadi blue screen pada monitor. \n4. Gagal menjalankan software atau aplikasi. \n5. Muncul bunyi beep beberapa kali.",
                 "- Upgrade kapasitas RAM sehingga tidak membebani kerja RAM terlalu berat \n\n- Bersihkan slot RAM dari debu-debu yang menempel sampai bersih \n\n- Bersihkan bagian pin RAM menggunakan penghapus karet dengan cara mengosok satu arah pada bagian tembaga/kuningan pada RAM \n\n- Membeli RAM dalam kondisi baru dari merek yang sudah terpercaya.",
-                R.drawable.processor);
+                R.drawable.pelecehan_gender);
         insertKerusakan(p3);
 
         Perilaku p4 = new Perilaku(
@@ -119,7 +119,7 @@ public class SispakDBHelper extends SQLiteOpenHelper {
                 "Kerusakan pada hardisk bisa terjadi karena tidak sengaja terjatuh atau terbentur karena hardisk merupakan komponen hardware yang berisikan disk/cakram. Benda tersebut memiliki sifat sensitif jika terjatuh atau terbentur karena berpotensi mengalami kerusakan. Instalasi software atau sistem operasi yang berlebihan juga berpotensi mendatangkan kerusakan hardisk. Karena hardisk akan bekerja ekstra bahkan cakram akan berputar cepat saat melakukan instalasi secara berlebihan.",
                 "1. Terdengar suara berisik pada bagian Harddisk. \n2. Data file mengalami kerusakan atau hilang. \n3. Terjadi blue screen pada monitor \n4. Selalu muncul scandisk saat booting.",
                 "- Melakukan Disk Defragment untuk mengatur seluruh file dan data pada hardisk menjadi berurutan, mengurangi kinerja perputaran disk/cakram didalam hardisk agar lebih awet \n\n- Menggunakan software bernama Software Recovery yang bisa mengembalikan seluruh data pada hardisk yang sebelumnya hilang, terhapus atau terformat \n\n- Lakukan pengecekan ulang pada posisi hardisk. Lalu betulkan hardisk pada posisi yang benar. \n\n- Ganti dengan hardisk yang baru apabila hardisk sudah cukup lama digunakan.",
-                R.drawable.processor);
+                R.drawable.pemaksaan_seksual);
         insertKerusakan(p4);
 
         Perilaku p5 = new Perilaku(
@@ -128,7 +128,7 @@ public class SispakDBHelper extends SQLiteOpenHelper {
                 "Kerusakan pada hardisk bisa terjadi karena tidak sengaja terjatuh atau terbentur karena hardisk merupakan komponen hardware yang berisikan disk/cakram. Benda tersebut memiliki sifat sensitif jika terjatuh atau terbentur karena berpotensi mengalami kerusakan. Instalasi software atau sistem operasi yang berlebihan juga berpotensi mendatangkan kerusakan hardisk. Karena hardisk akan bekerja ekstra bahkan cakram akan berputar cepat saat melakukan instalasi secara berlebihan.",
                 "1. Terdengar suara berisik pada bagian Harddisk. \n2. Data file mengalami kerusakan atau hilang. \n3. Terjadi blue screen pada monitor \n4. Selalu muncul scandisk saat booting.",
                 "- Melakukan Disk Defragment untuk mengatur seluruh file dan data pada hardisk menjadi berurutan, mengurangi kinerja perputaran disk/cakram didalam hardisk agar lebih awet \n\n- Menggunakan software bernama Software Recovery yang bisa mengembalikan seluruh data pada hardisk yang sebelumnya hilang, terhapus atau terformat \n\n- Lakukan pengecekan ulang pada posisi hardisk. Lalu betulkan hardisk pada posisi yang benar. \n\n- Ganti dengan hardisk yang baru apabila hardisk sudah cukup lama digunakan.",
-                R.drawable.processor);
+                R.drawable.penyuapan_seksual);
         insertKerusakan(p5);
     }
 
