@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ProgressBar
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
@@ -25,7 +26,7 @@ class ArticleFragment : Fragment(), LifecycleObserver {
 
     private lateinit var binding: FragmentArticleBinding
     private lateinit var rvArticle: RecyclerView
-
+    private lateinit var progressBar: ProgressBar
     private lateinit var mAdapters: ArticleNewsAdapters
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
@@ -39,12 +40,17 @@ class ArticleFragment : Fragment(), LifecycleObserver {
         Log.i("tag","RecyclerView Created")
 
         rvArticle  = binding.rvArticle
+        progressBar = binding.progressBar
 
 //        Cobaa
         rvArticle.layoutManager  = LinearLayoutManager(requireContext())
-        setArticleData()
+
         mAdapters = ArticleNewsAdapters(requireContext())
         rvArticle.adapter = mAdapters
+
+        progressBar.visibility = View.VISIBLE
+        rvArticle.visibility = View.GONE
+        setArticleData()
 
     }
 
@@ -99,6 +105,8 @@ class ArticleFragment : Fragment(), LifecycleObserver {
                             article.link = jsonObjectData.getString("link")
                         }
                       mAdapters.updateArticle(listArticle)
+                      progressBar.visibility = View.GONE
+                      rvArticle.visibility = View.VISIBLE
 
                   }
                   catch (e: JSONException){
