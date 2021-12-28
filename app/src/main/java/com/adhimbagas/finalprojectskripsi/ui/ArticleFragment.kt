@@ -69,7 +69,7 @@ class ArticleFragment : Fragment(), LifecycleObserver {
 
     private fun setArticleData() {
 
-        val url = "https://forkombi.com/wp-json/wp/v2/posts?per_page=5"
+        val url = "https://laporkps.000webhostapp.com/wp-json/wp/v2/posts?per_page=5"
 
        val queue = Volley.newRequestQueue(this.context)
         // Formulate the request and handle the response.

@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
@@ -30,6 +31,7 @@ import com.google.android.material.textfield.TextInputEditText
 class LaporFragment : Fragment(), LifecycleObserver {
 
     private lateinit var binding: FragmentLaporBinding
+    private lateinit var progresBar: ProgressBar
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
@@ -37,17 +39,21 @@ class LaporFragment : Fragment(), LifecycleObserver {
         binding = FragmentLaporBinding.inflate(layoutInflater)
         return binding.root
 
+
+
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
     fun onCreated(){
-
+        progresBar = binding.progresBar
         setUpListener()
+
 
 
 
         binding.button.setOnClickListener {
             if (isValidate()){
+                progresBar.visibility = View.INVISIBLE
                 submitData ()
             } else {
                 Toast.makeText(context, "Error!!!", Toast.LENGTH_SHORT).show()
@@ -70,7 +76,7 @@ class LaporFragment : Fragment(), LifecycleObserver {
 
         val jsonObjReq = object : StringRequest(Request.Method.POST, url,
         Response.Listener { response ->
-            Toast.makeText(context, response,Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Data Berhasil Di Input",Toast.LENGTH_SHORT).show()
             Log.d(ContentValues.TAG, "onResponse: $response")
 
             val i = Intent(this.context, MainActivity::class.java)
@@ -91,6 +97,7 @@ class LaporFragment : Fragment(), LifecycleObserver {
                 return map
             }
         }
+        progresBar.visibility = View.VISIBLE
         jsonObjReq.retryPolicy = DefaultRetryPolicy(15000, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT)
 
         Volley.newRequestQueue(this.context).add(jsonObjReq)

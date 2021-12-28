@@ -12,6 +12,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgroun_png"
     >
+
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
@@ -39,6 +40,7 @@
         app:counterMaxLength="20"
         app:helperText="*wajib"
         app:endIconMode="clear_text"
+        app:boxStrokeColor="@color/blueDark"
         app:errorIconDrawable="@drawable/ic_error"
         app:helperTextTextColor="@color/red"
         app:layout_constraintEnd_toEndOf="parent"
@@ -226,17 +228,26 @@
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="32dp"
-        android:textColor="@color/white"
-        android:text="@string/button_input_lapor"
         android:background="@drawable/btn_gradient"
+        android:text="@string/button_input_lapor"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progresBar" />
+
+    <ProgressBar
+        android:id="@+id/progresBar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:max="100"
+        android:progress="0"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_layout_report" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

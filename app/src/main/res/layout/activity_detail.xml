@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/ActionBartheme"
+    android:background="@color/k"
     tools:context=".ui.activity.DetailActivity"
     >
         <com.google.android.material.appbar.AppBarLayout
@@ -21,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:contentInsetStartWithNavigation="0dp"
-                app:navigationIcon="@drawable/ic_back">
+                app:navigationIcon="@drawable/ic_back_white">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
