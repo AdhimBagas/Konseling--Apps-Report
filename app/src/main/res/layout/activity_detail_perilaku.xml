@@ -10,11 +10,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.activity.activityRobo.DetailPerilaku">
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="32dp"
         app:cardCornerRadius="10dp"
@@ -35,11 +36,11 @@
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="26dp"
                 android:layout_marginEnd="14dp"
+                android:contentDescription="@string/img_des_perilaku"
+                android:src="@drawable/pelecehan_gender"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-               android:src="@drawable/pelecehan_gender"
-                android:contentDescription="@string/img_des_perilaku" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tv_perilaku_detail"
@@ -59,21 +60,23 @@
                 style="@style/textDetail"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="24dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_perilaku_detail" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_perilaku_detail"
+                tools:targetApi="o" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"
+                style="@style/CustomCardViewStyle"
                 android:layout_width="86dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="16dp"
                 android:padding="5dp"
-                style="@style/CustomCardViewStyle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_deskripsi_detail">
 
@@ -81,11 +84,11 @@
                     android:id="@+id/textView7"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                   android:gravity="center"
+                    android:background="@drawable/card_gradient"
                     android:fontFamily="@font/nunito_bold"
+                    android:gravity="center"
                     android:text="@string/ciri_ciri"
                     android:textColor="@color/white"
-                    android:background="@drawable/card_gradient"
                     android:textSize="14sp" />
             </androidx.cardview.widget.CardView>
 
@@ -114,10 +117,10 @@
                     android:id="@+id/textView9"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:fontFamily="@font/nunito_bold"
-                    android:text="@string/solusi"
                     android:background="@drawable/card_gradient"
+                    android:fontFamily="@font/nunito_bold"
+                    android:gravity="center"
+                    android:text="@string/solusi"
                     android:textColor="@color/white" />
             </androidx.cardview.widget.CardView>
 

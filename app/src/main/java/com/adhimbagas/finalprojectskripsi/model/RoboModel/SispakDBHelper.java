@@ -89,45 +89,65 @@ public class SispakDBHelper extends SQLiteOpenHelper {
         Perilaku p1 = new Perilaku(
                 1,
                 "Perilaku Menggoda",
-                "Kerusakan pada prosesor bisa disebabkan karena prosesor mengalami panas yang berlebihan atau sering juga disebut overheating, sehingga dapat menyebabkan IC nya terbakar dan kemudian prosesor tidak dapat digunakan lagi. Kerusakan ini juga bisa terjadi karena banyak debu yang menempel pada kipas prosesor yang menyebabkan kinerja dari kipas pendingin prosesor terganggu",
-                "1. Suhu prosesor cepat panas. \n2. Komputer sering restart sendiri. \n3. Komputer menyala, tapi tidak tampil di monitor. \n4. Muncul pesan error pada BIOS. \n5. Gagal menjalankan software atau aplikasi.",
-                "- Bersihkan kipas prosesor dari debu-debu yang menempel agar kinerja kipas prosesor kembali normal \n\n- Gunakan kipas tambahan untuk membantu menurunkan suhu prosesor \n\n- Berikan Thermal Paste pada permukaan prosesor, karena Thermal Paste berguna menyerap suhu panas yang dihasilkan prosesor \n\n- Jangan paksakan komputer untuk menjalankan aplikasi yang cukup berat \n\n- Atur sirkulasi udara dalam ruangan agar tetap sejuk karena secara tidak langsung mempengaruhi suhu dari prosesor dan komputer.",
+                "Merupakan perilaku seksual yang menyinggung, tidak pantas, dan tidak diinginkan. ",
+                "1. Menggoda dengan omongan yang sensual yang menyebabkan rasa tersinggung kepada lawan bicara nya \n" +
+                        "2. Mengirimkan surat dan panggilan telepon yang tak henti-henti meski sudah ditolak dengan tujuan untuk menggoda. \n" +
+                        "3. Mengulangi ajakan seksual secara terus menerus dan tidak diinginkan.",
+                "- Dengan menolak setiap ajakan dengan tegas dan berani. \n" +
+                        "- Jika terus dilakukan segera hubungi pihak berwajib untuk laporan melakukan hal yang tidak mengenakan. \n" +
+                        "- Memberitahukan bahwa apa yang dilakukannya adalah hal yang salah dan tidak baik.",
                 R.drawable.perilaku_menggoda);
         insertKerusakan(p1);
 
         Perilaku p2 = new Perilaku(
                 2,
                 "Pelanggaran Seksual",
-                "Kerusakan motherboard bisa terjadi karena terjadi kerusakan chipset yang menyebabkan pembacaan perangkat keras yang terhubung menjadi lambat, bahkan terjadi kegagalan dalam hubungan (interkoneksi) antar komponen dalam motherboard dan akibatnya komputer stuck pada tampilan tertentu. Kerusakan motherboard juga bisa terjadi karena adanya tegangan listrik dan juga suplai listrik yang tidak stabil yang bisa menyebabkan motherboard terbakar.",
-                "1. Tampilan layar komputer stuck di boot screen. \n2. Komputer sulit untuk dihidupkan. \n3. Komputer mati total. \n4. Lampu indikator pada monitor berkedip-kedip.",
-                "- Jauhkan kompenen motherboard dari lokasi berdebu yang bisa menghambat proses pendinginan \n\n- Jangan menjatuhkan motherboard dengan keras \n\n- Selalu periksa apakah setiap komponen sudah tersambung dengan baik pada socketnya \n\n- Gunakan volt stabilizer untuk menstabilkan daya listrik dan juga tegangan listrik agar tidak kurang atau kelebihan.",
+                "Merupakan tindakan pelanggaran seksual berat seperti menyentuh, merasakan, atau meraih secara paksa atau melakukan penyerangan seksual.",
+                "1. Melakukan tindakan seksual secara langsung. \n" +
+                        "2. Melakukan pelanggaran seksual yang dapat merugikan korban. \n" +
+                        "3. Memberikan suatu tindakan yang berakibat melecehkan harga diri korban secara seksual.",
+                "- Memberitahu seseorang atas peristiwa yang menimpa anda, jangan menyimpannya untuk diri sendiri. \n" +
+                        "- Mencari tahu siapa yang bertanggung jawab untuk menangani pelecehan di daerah atau wilayah tersebut.\n" +
+                        "- Jika anda mengalami tekanan psikologis yang parah, anda mungkin dapat berkonsultasi pada psikolog atau terapis profesional akan kesehatan mental anda.",
                 R.drawable.pelanggaran_seksual);
         insertKerusakan(p2);
 
         Perilaku p3 = new Perilaku(
                 3,
                 "Pelecehan Gender",
-                "Kerusakan memori RAM bisa disebabkan karena pemakaian yang berlebihan, seperti RAM dengan kapasitas hanya 1 GB dipaksa untuk menjalankan aplikasi yang membutuhkan kapasitas RAM yang besar. Ini bisa menyebabkan RAM dapat mengalami malfungsi dan mengalami kerusakan. Hal lainnya yang dapat menyebabkan kerusakan memori RAM adalah slot RAM tertutup debu atau lembab karena air.",
-                "1. Komputer terasa lambat atau berat. \n2. Komputer sering restart sendiri. \n3. Terjadi blue screen pada monitor. \n4. Gagal menjalankan software atau aplikasi. \n5. Muncul bunyi beep beberapa kali.",
-                "- Upgrade kapasitas RAM sehingga tidak membebani kerja RAM terlalu berat \n\n- Bersihkan slot RAM dari debu-debu yang menempel sampai bersih \n\n- Bersihkan bagian pin RAM menggunakan penghapus karet dengan cara mengosok satu arah pada bagian tembaga/kuningan pada RAM \n\n- Membeli RAM dalam kondisi baru dari merek yang sudah terpercaya.",
+                "Merupakan tindakan seksual lewat sentuhan fisik maupun non-fisik dengan sasaran organ seksual atau seksualitas korban. Termasuk juga menggunakan siulan, main mata, ucapan bernuansa seksual, mempertunjukkan materi pornografi dan keinginan seksual, colekan atau sentuhan di bagian tubuh, gerakan atau isyarat yang  bersifat seksual sehingga mengakibatkan rasa tidak nyaman, tersinggung, merasa direndahkan martabatnya, dan mungkin sampai menyebabkan masalah kesehatan dan keselamatan",
+                "1. Melakukan sentuhan fisik di area organ seksual atau seksualitas korban. \n2. Melakukan siulan, main mata, ataupun ucapan bernuansa seksual yang mengakibatkan rasa tidak nyaman, tersinggung, dan merasa direndahkan martabatnya. \n3. Sentuhan yang tidak diinginkan. Jika seseorang menyentuh bagian tubuh perempuan, padahal dia tidak mengizinkannya, maka hal tersebut merupakan pelecehan. Situasi ini pun serupa jika terjadi pada pria. \n4. Perilaku yang tidak diinginkan. Jika seseorang memaksamu untuk bersikap intim padahal Kamu tidak menginginkannya, atau jika seseorang menguntit lalu masuk ke ruangan pribadimu dengan tindakan mengancam, maka hal tersebut juga disebut pelecehan seksual. \n5. Pelecehan secara online. Bila seseorang mengirim e-mail, foto, teks, atau konten apa pun yang mengaitkanmu dengan situasi seksual, maka hal tersebut juga disebut pelecehan. Kamu harusnya tidak tinggal diam.",
+                "- Berbicara secara terus terang \nJika Anda adalah korban pelecehan, langkah pertama yang harus dilakukan adalah dengan membiarkan pihak yang bersalah tahu bahwa Anda menemukan perilaku mereka sebagai perilaku ofensif. Dalam banyak kasus ini dapat menyelesaikan masalah. Jika hal ini tidak menyelesaikan masalah, setidaknya pelaku tahu bahwa Anda merasa perilakunya sangat mengganggu. \n- Memberitahu Pelaku untuk berhenti \n" +
+                        "Dengan memberitahukan pelaku tentang perbuatannya, maka hal ini adalah langkah defense pertama anda terhadap pelaku. Sehingga pelaku akan berpikir 2x lagi untuk melanjutkan perbuatannya. \n" +
+                        "- Mendokumentasikan Perilaku Pelecehan \nJika anda sempat dan memiliki kesempatan serta keberanian lebih, maka tidak ada salahnya untuk mendokumentasikan perilaku pelaku untuk dijadikan barang bukti ketika di proses di pengadilan nanti \n" +
+                        "- Memproses ke Pengadilan \nJika lembaga pemerintah mengeluarkan surat hak untuk menuntut, Anda dapat membawa gugatan perdata atas cedera yang Anda derita akibat pelecehan seksual. Anda tidak perlu menunjukkan luka fisik. Cedera yang paling umum dalam kasus pelecehan seksual adalah luka secara emosional yang diderita oleh korban.",
                 R.drawable.pelecehan_gender);
         insertKerusakan(p3);
 
         Perilaku p4 = new Perilaku(
                 4,
                 "Pemaksaan Seksual",
-                "Kerusakan pada hardisk bisa terjadi karena tidak sengaja terjatuh atau terbentur karena hardisk merupakan komponen hardware yang berisikan disk/cakram. Benda tersebut memiliki sifat sensitif jika terjatuh atau terbentur karena berpotensi mengalami kerusakan. Instalasi software atau sistem operasi yang berlebihan juga berpotensi mendatangkan kerusakan hardisk. Karena hardisk akan bekerja ekstra bahkan cakram akan berputar cepat saat melakukan instalasi secara berlebihan.",
-                "1. Terdengar suara berisik pada bagian Harddisk. \n2. Data file mengalami kerusakan atau hilang. \n3. Terjadi blue screen pada monitor \n4. Selalu muncul scandisk saat booting.",
-                "- Melakukan Disk Defragment untuk mengatur seluruh file dan data pada hardisk menjadi berurutan, mengurangi kinerja perputaran disk/cakram didalam hardisk agar lebih awet \n\n- Menggunakan software bernama Software Recovery yang bisa mengembalikan seluruh data pada hardisk yang sebelumnya hilang, terhapus atau terformat \n\n- Lakukan pengecekan ulang pada posisi hardisk. Lalu betulkan hardisk pada posisi yang benar. \n\n- Ganti dengan hardisk yang baru apabila hardisk sudah cukup lama digunakan.",
+                "Suatu aktivitas pemaksaan seksual atau  perilaku terkait seks lainnya dengan menggunakan ancaman.\n" +
+                        "Contohnya seperti evaluasi kerja yang negatif, pencabutan promosi kerja, dan ancaman pembunuhan",
+                "1. Melakukan pemaksaan untuk melakukan aktivitas seksual disertai dengan berbagai ancaman. \n" +
+                        "2. Memaksa korban untuk memenuhi kemauan pelaku tanpa adanya kesepakatan bersama. \n" +
+                        "3. Direndahkan nya martabat seseorang akibat perilaku ini.",
+                "- Menolak dengan tegas serta memberikan ancaman akan melaporkan kejadian tersebut ke pihak berwajib.\n" +
+                        "- Berlari menyelamatkan diri.\n" +
+                        "- Melawan dengan tetap memperhatikan keselamatan diri.",
                 R.drawable.pemaksaan_seksual);
         insertKerusakan(p4);
 
         Perilaku p5 = new Perilaku(
                 5,
                 "Penyuapan Seksual",
-                "Kerusakan pada hardisk bisa terjadi karena tidak sengaja terjatuh atau terbentur karena hardisk merupakan komponen hardware yang berisikan disk/cakram. Benda tersebut memiliki sifat sensitif jika terjatuh atau terbentur karena berpotensi mengalami kerusakan. Instalasi software atau sistem operasi yang berlebihan juga berpotensi mendatangkan kerusakan hardisk. Karena hardisk akan bekerja ekstra bahkan cakram akan berputar cepat saat melakukan instalasi secara berlebihan.",
-                "1. Terdengar suara berisik pada bagian Harddisk. \n2. Data file mengalami kerusakan atau hilang. \n3. Terjadi blue screen pada monitor \n4. Selalu muncul scandisk saat booting.",
-                "- Melakukan Disk Defragment untuk mengatur seluruh file dan data pada hardisk menjadi berurutan, mengurangi kinerja perputaran disk/cakram didalam hardisk agar lebih awet \n\n- Menggunakan software bernama Software Recovery yang bisa mengembalikan seluruh data pada hardisk yang sebelumnya hilang, terhapus atau terformat \n\n- Lakukan pengecekan ulang pada posisi hardisk. Lalu betulkan hardisk pada posisi yang benar. \n\n- Ganti dengan hardisk yang baru apabila hardisk sudah cukup lama digunakan.",
+                "Perilaku ini berupa permintaan aktivitas seksual dengan janji imbalan yang dilakukan secara terang-terangan. Misalnya seorang wanita/pria mengajak seorang anak melakukan hubungan intim dengan iming-iming uang, asalkan ia tidak memberitahukannya kepada orang lain.",
+                "1. Situasi dimana perempuan mengalami tipu daya, ancaman, maupun kekerasan untuk menjadi pekerja seks. \n" +
+                        "2. Biasanya keadaan ini terjadi di masa rekrutmen, dimana korban menginginkan hasil tertentu dan pelaku memanfaatkan hal tersebut untuk melakukan penyuapan seksual. \n" +
+                        "3. Mengiming-imingi perkawinan untuk memperoleh layanan seksual dari perempuan tersebut dengan imbalan baik uang, jabatan,ataupun kepastian pernikahan dengan pemaksaan ataupun dapat menyebabkan rasa tidak nyaman dan terlecehkan dari korban.",
+                "- Jika kamu sedang berada didalam ruangan ataupun sedang interview untuk suatu pekerjaan, dan tiba-tiba ada tawaran mengenai penyuapan seksual dan kamu tidak menerima kejadian tersebut, kamu bisa langsung keluar ruangan dan meninggalkan apa hal yang sedang kamu perjuangkan selama ini. Yakinlah masih banyak kesempatan lain diluar sana. \n" +
+                        "- Jangan takut untuk melaporkan kejadian yang kamu alami. Laporkan kejadian tersebut ke lembaga yang menaungi kasus kekerasan dan pelecehan seksual. \n" +
+                        "- Tuliskan kejadian yang kamu alami di media sosial untuk di viralkan. Namun tetap memperhatikan kaidah tak bersalah dari sudut pandang pelaku.",
                 R.drawable.penyuapan_seksual);
         insertKerusakan(p5);
     }
