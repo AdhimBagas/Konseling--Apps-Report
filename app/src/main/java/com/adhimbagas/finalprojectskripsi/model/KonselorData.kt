@@ -13,7 +13,7 @@ object KonselorData {
                         "Konselor",
                         "saya adalah konselor di universitas negeri semaarang" +
                                 "Sebagai salah satu konselor dengan jam terbang yang tinggi",
-                        "Jl. Proyonanggan Utara selatana80 - 111203 Kauamn Batang jawa tengah",
+                        "Jl. Proyonanggan Utara selatan",
                         "Senin - Jum'at\n" +
                                 "09.00 - 10.00 WIB",
                         "https://i.ibb.co/88fPgBB/adhim-bagas.png"

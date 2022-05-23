@@ -16,18 +16,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProjectSkripsi"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.activity.activityRobo.InformasiPerilaku"></activity>
-        <activity android:name=".ui.activity.activityRobo.DetailPerilaku" />
-        <activity android:name=".ui.activity.activityRobo.PertanyaanGejala" />
-        <activity android:name=".ui.activity.RoboHome" />
-        <activity android:name=".ui.activity.DetailKonselorHome" android:theme="@style/Theme.FinalProjectSkripsi"/>
-        <activity android:name=".ui.activity.DetailActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.activity.SplashScreen">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity android:name=".ui.activity.activityRobo.InformasiPerilaku" />
+        <activity android:name=".ui.activity.activityRobo.DetailPerilaku" />
+        <activity android:name=".ui.activity.activityRobo.PertanyaanGejala" />
+        <activity android:name=".ui.activity.RoboHome" />
+        <activity
+            android:name=".ui.activity.DetailKonselorHome"
+            android:theme="@style/Theme.FinalProjectSkripsi" />
+        <activity android:name=".ui.activity.DetailActivity" />
+        <activity android:name=".MainActivity">
+
+
+
         </activity>
 
         <meta-data
